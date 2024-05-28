@@ -1,0 +1,159 @@
+body {
+    background-color: #FFFDD7;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    background-color: #E72929;
+    overflow: hidden;
+    padding: 10px 10px;
+}
+
+.navbar a.active{
+    color: black;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar a:hover{
+    /* background-color: black; */
+    color: black;
+    transition: 0.3s ease;
+}
+
+.spotify-box{
+    width: 300px;
+    background-color: #F74A4A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    min-width: 200px;
+    /* flex: 1 1 calc(25% - 20px); */
+    /* text-align: center; */
+}
+
+.recommended-heading{
+    /* text-align: center; */
+    margin: 40px 0 20px;
+}
+
+.spotify-box:hover{
+    /* border: 1px solid black; */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.spotify-box img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.spotify-details{
+    text-align: center;
+}
+
+.song-name{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 0;
+    /* width: 100%; */
+    margin-bottom: 20px;
+}
+
+.album-info{
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20px; */
+    padding: 3px;
+
+}
+
+.album-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+  
+.song-details {
+    flex-grow: 1;
+}
+  
+h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+  
+.center-container{
+    /* display: flex; */
+    flex-direction: column;
+    /* align-items: flex-start; */
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.welcome-text{
+    text-align: right;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+    /* color: #666; */
+}
+
+.content-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+}
+
+.left-container{
+    flex: 3;
+    text-align: center;
+}
+
+.right-container{
+    /* flex: 1;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; */
+    position: absolute;
+    right: 20px;
+  top: 20px;
+}
+
+.spotify-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a {
+      float: left;
+      display: block;
+      text-align: left;
+    }
+  }

@@ -1,0 +1,122 @@
+body {
+    background-color: #FFFDD7;
+    margin: 0;
+}
+
+
+
+.navbar{
+    display: flex;
+    background-color: #E72929;
+    overflow: hidden;
+    padding: 10px 10px;
+    
+}
+
+.navbar a.active{
+    color: black;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar a:hover{
+    /* background-color: black; */
+    color: black;
+    transition: 0.3s ease;
+}
+
+.hidden-gender option{
+    background-color: red;
+    color: blue;
+}
+
+input::placeholder{
+    color: black;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.center-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:83vh;
+    
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    /* display: block; */
+    margin-bottom: 3px;
+}
+
+.error{
+    color: red;
+}
+
+input,
+select{
+    /* width: 100%; */
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+button{
+    margin-top: 7px;
+    padding: 10px 110px;
+    background-color: #F74A4A;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: white;
+}
+
+p{
+    margin-top: 20px;
+}
+
+p a{
+    color: black;
+    text-decoration: underline;
+}
+
+p a:hover{
+    color: blue;
+    /* text-decoration: underline; */
+}
+@media screen and (max-width: 600px) {
+    .navbar a {
+      float: left;
+      display: block;
+      text-align: left;
+    }
+  }
