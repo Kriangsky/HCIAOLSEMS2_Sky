@@ -6,11 +6,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
   
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #E72929;
     padding: 25px 50px;
     width: 100%;
@@ -21,24 +23,16 @@ body {
     transition: 0.3s ease;
 }
   
-.left-nav {
-    display: flex;
-}
-  
-.right-nav {
-    display: flex;
-}
-  
 .navbar a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
 }
-  
-.left-nav a {
-    margin-left: 0; 
+
+.logout{
+    margin-right: 25px;
 }
-  
+
 .user-profile {
     text-align: center;
     margin: 20px 0;
